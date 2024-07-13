@@ -52,7 +52,7 @@ app.put('/users/:id/location', async (req, res) => {
 });
 
 // Route to get weather data for a user for a given day
-app.get('/users/:id/weather', async (req, res) => {
+app.get('/users/:email/weather/:date', async (req, res) => {
   try {
     const { date } = req.query;
     const user = await User.findById(req.params.id);
