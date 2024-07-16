@@ -98,7 +98,7 @@ const fetchWeatherAndSendEmail = async () => {
 };
 
 // Schedule the task to run every minute for testing
-cron.schedule('* * * * *', fetchWeatherAndSendEmail);
+cron.schedule('0 */3 * * *', fetchWeatherAndSendEmail);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
