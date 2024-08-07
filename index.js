@@ -10,7 +10,7 @@ require('dotenv').config();
 const app = express();
 app.use(express.json());
 
-const MONGODB_URI = 'mongodb://localhost:27017/weather';
+const MONGODB_URI = 'mongodb+srv://shpereraofficial:smcrcc2012@cluster0.dm61f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const OPENWEATHERMAP_API_KEY = '2e9e7138926121d60baa5aebad5045d0';
 
 mongoose.connect(MONGODB_URI)
